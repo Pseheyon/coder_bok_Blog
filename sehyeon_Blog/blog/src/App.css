@@ -1,0 +1,469 @@
+*{list-style: none; text-decoration: none; 
+}
+
+body{
+  font-family: 'Gloock', serif;
+  font-size: 16px;
+  background-image: url(../public/img/bodyBg.jpg);
+  background-size: cover;
+  height: 100vh;
+  /* overflow: hidden; */
+}
+
+/* nav */
+
+.nav {
+  height: 6vh;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1.25rem;
+  gap: 1%;
+  border-top: 2px solid black;
+  box-sizing: border-box;
+  color: black;
+  padding: 1%;
+  font-weight: 600;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+.navLeft, .navRight{
+  display: flex;
+  align-items: center;
+}
+.navRight{
+  width: 5%;
+  justify-content: space-between;
+}
+.leftStar{
+  width: 29px;
+  height: 29px;
+  margin-right: 3%;
+  cursor: pointer;
+}
+.rightStar{
+  width: 19px;
+  height: 19px;
+  cursor: pointer;
+}
+.writePen{
+  width: 18px;
+  height: 18px;
+  margin-right: 3%;
+  cursor: pointer;
+}
+.login{
+  display: inline-block;
+  font-size: 1rem;
+  padding: 0 0.5%;
+  box-sizing: border-box;
+  margin: 0 0.5%;
+  font-weight: bolder;
+}
+.contents{
+  display: flex;
+  height: 90vh;
+  box-sizing: border-box;
+  padding: 1%;
+  gap: 1%;
+  box-sizing: content-box;
+  border-top: 2px solid black;
+  border-bottom: 2px solid black;
+}
+/* login */
+.main.loginBox{
+  margin: 0 auto;
+  padding-top: 5%;
+  width: 30vw;
+  height: 60vh;
+  
+}
+button{cursor: pointer;}
+.logindo{
+  padding-top: 18%;
+  font-weight: 500;
+  margin-bottom: 0%;
+  text-align: center;
+}
+#onlylogin{
+  padding-bottom: 5%;
+}
+.main.loginBox .blckboxs{
+  height: 60vh;
+}
+.main.loginBox .blckboxs > .box{
+  padding: 0.5%;
+}
+.formLogin{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1%;
+  box-sizing: border-box;
+}
+
+.loginInput{
+  width:100%;
+  background-color: white;
+  border-bottom: 2px solid black;
+  text-align: center;
+  font-weight: bold;
+}
+.loginInput span{
+  width: 100%;
+  padding: 1%;
+  box-sizing: border-box;
+}
+.docomf{
+  text-align: center;
+  margin: 0;
+  padding-bottom: 1%;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+/* .formLogin{
+  padding-top: 35%;} */
+.formLogin span{
+  padding-top: 2%;
+  width: 40%;
+  display: flex;
+  align-items: right;
+  
+  overflow: hidden;
+}
+.formLogin > span > span{
+  width: 30%;
+}
+.loginBtn{
+  margin-top: 5%;
+  width: 100%;
+  background-color: black;
+  color: white;
+  padding: 2%;
+  border:2px solid white;
+}
+
+/* aside */
+
+.aside{
+  width: 40%;
+  display: flex;
+  align-items: center;
+  position: relative;
+  border: 2px solid black;
+  box-sizing: border-box;
+  background: #FAF4F8;
+  flex-grow:1;
+}
+.hartRing{
+  width: 41px;
+  height: 30px;
+  padding: 1%;
+}
+
+.asideBox{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-sizing: border-box;
+  width: 100%;
+}
+
+.profil{
+  width: 177px;
+  height: 177px;
+}
+
+
+/* main */
+
+
+.main{
+  width: 100%;
+  height: 100%;
+  flex-grow:6;
+  position: relative;
+}
+.blckboxs{
+  position:  absolute;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+.blckboxs > .box{
+  padding: 0.3%;
+  background-color: black;
+}
+/* .aside > .blckboxs > .box{
+  padding: 0.5%;
+  background-color: black;
+} */
+.box::after {
+  display: block;
+  content: "";
+  padding-bottom: 100%;
+}
+.box1{position: absolute;top: 0;left: 0;}
+.box2{position: absolute;top: 0;right: 0;}
+.box3{position: absolute;bottom: 0;left: 0;}
+.box4{position: absolute;bottom: 0;right: 0;}
+
+.mainInner{
+  height: 100%;
+  border: 2px solid black;
+  box-sizing: border-box;
+  padding: 0.5%;
+}
+.listOtuline{
+  height: 100%;
+  padding: 1%;
+  border: 2px solid black;
+  box-sizing: border-box;
+}
+.listWrap{
+  height: 100%;
+  padding: 0%;
+  border: 2px solid black;
+  box-sizing: border-box;
+  background: #FAF4F8;
+}
+
+.listBox,.listInner{
+  width: 100%;
+  margin: 0;
+  background: #FAF4F8;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1.25rem ;
+  color: black;
+  font-weight: 600;
+  padding-left: 0;
+}
+.listBox{
+  border-bottom: 2px solid black;
+  padding-bottom: 1%;
+}
+.listText{
+  display: flex;
+  width: 100%;
+  padding: 0 1%; 
+
+justify-content: space-between;
+ gap: 1%;
+}
+
+.listTitle{
+  width: 80%;
+  display: flex;
+  padding: 0 1%; 
+  justify-content: flex-start;
+  align-items: center;
+  font-size: 1.25rem ;
+  box-sizing: border-box;
+  color: black;
+  font-weight: 600;
+  gap: 1%;
+  align-items: baseline
+}
+.TXT h3, .TXTmin{
+  margin: 2% auto;
+}
+.dia{
+  width: 8px;
+  height: 8px;
+  align-items: baseline
+}
+.listInner{
+  flex-direction: column;
+  flex-grow: 40;
+  padding-bottom: 1%;
+}
+.listInner .hartPuple{
+  width: 22px;
+  height: auto;
+}
+.list{
+  display: flex;
+}
+.listImfo{
+  display: flex;
+  width: 20%;
+}
+.listImfo{
+  width: 40%;
+  height: 0px;
+  padding: 1%;
+}
+.listBox .date{
+  font-size: 0.5rem;
+  margin-right: 2.5%;
+  padding: 0;
+  box-sizing: border-box;
+  transform: rotate(90deg);
+}
+
+.TXT{
+  text-align: left;
+  margin: 1% 0;
+  box-sizing: border-box;
+}
+.hartPuple{
+  width: 22px;
+  height: 19px;
+  box-sizing: border-box;
+}
+
+
+/* post */
+.postTop{
+  width: 100%;
+  display: flex;
+  padding-top: 1%;
+  align-items: left;
+}
+.hartCenter{
+  width: 50%;
+  display: flex;
+  justify-content: flex-end
+}
+.postBtnright{
+  width: 50%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.postArea, .postInner{
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  background: #FAF4F8;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1.25rem ;
+  padding-bottom: 1%;
+  box-sizing: border-box;
+  font-weight: 600;
+  padding-left: 0;
+}
+.postArea{
+  
+  padding-bottom: 1%;
+  height: 100%;
+}
+.postInner{
+  height: 100%;
+  flex-direction: column;
+  flex-grow: 40;
+  padding-bottom: 1%;
+  gap: 1%;
+}
+
+.postBox{
+  width: 100%;
+  flex: 1;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 0 1%; 
+  font-size: 1.25rem ;
+  box-sizing: border-box;
+  color: black;
+  font-weight: 600;
+  gap: 1%;
+  align-items: flex-end;
+  /* background-color: white; */
+}
+.postText{
+  flex: 1;
+  width: 100%;
+  height: 100%;
+  padding: 0 1%;
+  gap: 1%;
+  box-sizing: border-box;
+  justify-content: space-between;
+  gap: 1%;
+}
+.postTXT{
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 1%;
+  box-sizing: border-box;
+}
+
+.title{
+  padding: 2% auto;
+}
+.postInput{
+  width: 100%;
+  display: inline-block;
+  box-sizing: border-box;
+  border: 2px solid black;
+  padding: 4%;
+  border-radius: 0;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  
+}
+.title{
+  padding: 1.5% 1%;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-weight: bolder;
+  color: black;
+}
+.txt{
+  width: 100%;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  padding: 1.5% 1%;
+  overflow: hidden;
+  box-sizing: border-box;
+  flex: 1;
+  font-weight: bolder;
+  color: black;
+}
+.blkBtnline{
+  text-align: center;
+  border-radius: 0;
+  border: 2px solid black;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-weight: bolder;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  cursor: pointer;
+}
+.postDone{
+  margin-right: 1%;
+  padding: 0.2% 0.5%;
+}
+.postpenBtn{
+  width: 16px;
+  height: 16px;
+}
+.postcloseBtn{
+  width: 16px;
+  height: 16px;
+  margin-left: 0.5%;
+  margin-right: 4%;
+}
+
+.postpenBtn img{
+  width: 12px;
+  height: 12px;
+  padding: 0;
+}
+.postcloseBtn img{
+  width: 10px;
+  height: 10px;
+  padding: 0;
+}
+
+
+
+
+
